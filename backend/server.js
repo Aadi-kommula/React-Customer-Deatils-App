@@ -4,8 +4,6 @@ const express = require('express');
 const app = express();
 const db = require('./models/db');
 const dataRoutes = require('./routes/dataRoutes');
-// const express = require('express');
-// const app = express();
 
 // Enable CORS
 app.use((req, res, next) => {
@@ -13,9 +11,6 @@ app.use((req, res, next) => {
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   next();
 });
-
-// Your other routes and middleware
-// ...
 
 app.listen(5000, () => {
   console.log('Server is running on port 5001');
